@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="connect" method="post" th:object="${user}">
+login<input type="text"  th:field="*{login}" name="login"><br>
+password<input type="password" th:field="*{mdp}"  name="mdp">
+<input type="submit" value="connexion"> 
+</form>
+</body>
+</html>
